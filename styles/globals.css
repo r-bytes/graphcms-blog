@@ -28,18 +28,18 @@ body {
     /* IE 8 */
     /* -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#007572, endColorstr=#007572)" no-repeat;
     /* background-image: url("../public/22221.jpeg"); */
-    position: fixed;
+    /* position: fixed;
     left: 0;
     top: 0;
     z-index: -1;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
   }
 }
 
 body {
-  background-color: #333;
+  background-color: #2C3031;
   background-blend-mode: multiply;
   background-position: top;
   background-image: url('../public/bromo5.jpeg');
