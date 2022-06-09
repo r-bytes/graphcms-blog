@@ -1,1 +1,3 @@
-export const grpahCMSImageLoader = ({ src }) => src;
+const grpahCMSImageLoader = ({ src }) => src;
+
+export default grpahCMSImageLoader
