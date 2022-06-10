@@ -1,3 +1,3 @@
-const grpahCMSImageLoader = ({ src }) => src;
+const graphCMSImageLoader = ({ src }) => src;
 
-export default grpahCMSImageLoader
+export default graphCMSImageLoader

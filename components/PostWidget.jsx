@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import Image from 'next/image';
+import Image from 'next/image';
 import moment from 'moment';
 import Link from 'next/link';
 
@@ -27,7 +27,7 @@ const PostWidget = ({ categories, slug }) => {
       {relatedPosts.map((post, index) => (
         <div key={index} className="flex items-center w-full mb-4">
           <div className="w-16 flex-none">
-            <img
+            <Image
               loader={graphCMSImageLoader}
               alt={post.title}
               height="60px"
