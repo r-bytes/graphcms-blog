@@ -49,24 +49,24 @@ const CommentsForm = ( { slug }) => {
   }
 
   return (
-    <div className="bg-white bg-opacity-80 shadow-lg rounded-lg p-8 pb-12 mb-8">
-      <h3 className="text-xl mb-8 font-semibold border-b pb-4"> Leave a reply </h3>
+    <div className="bg-neutral-100 bg-opacity-80 shadow-lg rounded-lg p-8 pb-12 mb-8">
+      <h3 className="text-xl mb-8 font-semibold border-b pb-4 border-neutral-400"> Leave a reply </h3>
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea 
           ref={commentEl}
-          className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-800 bg-neutral-900 text-gray-100"
           placeholder="comment"
           name="comment"
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
         <input type="text" ref={nameEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-800 bg-neutral-900 text-gray-100"
           placeholder="name"
           name="name"
         />
         <input type="text" ref={emailEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-200 bg-gray-100 text-gray-700"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-800 bg-neutral-900 text-gray-100"
           placeholder="email"
           name="email"
         />
@@ -87,7 +87,7 @@ const CommentsForm = ( { slug }) => {
         <button 
           type='button'
           onClick={handleCommentSubmission}
-          className="transition duration-500 ease hover:bg-indigo-900 inline-block bg-pink-600 text-lg rounded-full text-white px-8 py-3 cursor-pointer"
+          className="transition duration-500 transform hover:translate-y-1 hover:bg-pink-800 inline-block bg-pink-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer"
           >
           Post Comment
         </button>

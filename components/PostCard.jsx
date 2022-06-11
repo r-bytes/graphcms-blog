@@ -6,10 +6,10 @@ import Image from 'next/image';
 const PostCard = ({post}) => {
   // console.log(post);
   return (
-    <div className="bg-white bg-opacity-80 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
+    <div className="bg-stone-100 bg-opacity-80 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
       
       {/* image */}
-      <div className="relative overflow-hidden shadow-md mb-6">
+      <div className="relative overflow-hidden mb-6">
         <Image
           unoptimized
           src={post.featuredImage.url} 
@@ -22,7 +22,7 @@ const PostCard = ({post}) => {
 
       {/* title */}
       <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-pink-600 text-3xl font-semibold object-fit">
-        <Link href={`/post/${post.slug}`}>
+        <Link href={`/post/${post.slug}`} className="hover:bg-pink-800 inline-block bg-pink-600">
           {post.title}
         </Link>
       </h1>
