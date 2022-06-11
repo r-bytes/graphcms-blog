@@ -54,19 +54,19 @@ const CommentsForm = ( { slug }) => {
       <div className="grid grid-cols-1 gap-4 mb-4">
         <textarea 
           ref={commentEl}
-          className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-800 bg-neutral-900 text-gray-100"
+          className="p-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-zinc-800 bg-zinc-800 text-gray-100"
           placeholder="comment"
           name="comment"
         />
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
         <input type="text" ref={nameEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-800 bg-neutral-900 text-gray-100"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-zinc-800 bg-zinc-800 text-gray-100"
           placeholder="name"
           name="name"
         />
         <input type="text" ref={emailEl}
-          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-gray-800 bg-neutral-900 text-gray-100"
+          className="py-2 px-4 outline-none w-full rounded-lg focus:ring-2 focus:ring-zinc-800 bg-zinc-800 text-gray-100"
           placeholder="email"
           name="email"
         />
