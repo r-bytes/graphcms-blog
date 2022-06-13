@@ -39,12 +39,7 @@ body {
 }
 
 body {
-  background-color: #1c1c1c;
-  background-blend-mode: multiply;
-  background-position: top;
-  background-image: url('../public/bromo5.jpeg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(23 23 23);
 }
 
 .text-shadow{

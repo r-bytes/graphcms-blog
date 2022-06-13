@@ -23,9 +23,9 @@ const PostDetail = ({ post }) => {
       case 'heading-three':
         return <h3 key={index} className="text-xl font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h3>;
       case 'paragraph':
-        return <p key={index} className="mb-8">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
+        return <p key={index} className="mb-8 text-gray-400">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</p>;
       case 'heading-four':
-        return <h4 key={index} className="text-md font-semibold mb-4">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
+        return <h4 key={index} className="text-md font-semibold mb-4 text-gray-400">{modifiedText.map((item, i) => <React.Fragment key={i}>{item}</React.Fragment>)}</h4>;
       case 'image':
         return (
           <img
@@ -42,7 +42,7 @@ const PostDetail = ({ post }) => {
   };
 
   return (
-    <div className='bg-stone-100 bg-opacity-80 shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
+    <div className='bg-neutral-800 bg-opacity-50 shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
       <div className="relative overflow-hidden shadow-md mb-6">
         <img 
           src={post.featuredImage.url}
@@ -61,12 +61,12 @@ const PostDetail = ({ post }) => {
               width='30px'
               className='align-middle rounded-full'
             />
-            <p className='inline align-middle text-gray-700 ml-2 text-lg'>{post.author.name}</p>
+            <p className='inline align-middle text-gray-400 ml-2 text-lg'>{post.author.name}</p>
           </div>
           
           {/* date */}
-          <div className="font-medium text-gray-700">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-pink-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="font-medium text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 inline mr-2 text-cyan-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
             </svg>
             <span>
@@ -74,7 +74,7 @@ const PostDetail = ({ post }) => {
             </span>
           </div>
         </div>
-        <h1 className="mb-8 text-3xl font-semibold"> {post.title}</h1>
+        <h1 className="mb-8 text-3xl font-semibold text-gray-400"> {post.title}</h1>
         {/* {console.log(post.content.raw)} */}
         {post.content.raw.children.map((typeObj, index) => {
           const children = typeObj.children.map((item, itemIndex) => getContentFragment(itemIndex, item.text, item))
