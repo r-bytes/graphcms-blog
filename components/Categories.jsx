@@ -15,7 +15,9 @@ const Categories = () => {
       <h3 className='text-xl mb-8 font-semibold border-neutral-600 border-b pb-4 text-gray-400'>
         Categories
       </h3>
-        {categories.map((category) => (
+        {categories
+          .sort( (a,b) => a.createdAt < b.createdAt ? 1 : -1)
+          .map((category) => (
           // console.log(category)
           <Link key={category.slug} href={`/category/${category.slug}`} className="transition duration-700 hover:text-cyan-700">
             <span className="transition duration-700 cursor-pointer block pb-3 mb-3 hover:text-cyan-700 text-gray-400">
