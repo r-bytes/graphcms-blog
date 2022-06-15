@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image';
 
 const PostCard = ({post}) => {
-  // console.log(post);
+  // console.log(post.createdAt);
   return (
     <div className="bg-neutral-800 bg-opacity-50 shadow-lg rounded-lg p-0 lg:p-8 pb-12 mb-8">
       
