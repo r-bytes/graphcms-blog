@@ -12,7 +12,7 @@ const PostCard = ({post}) => {
       <div className="relative overflow-hidden mb-6">
         <Image
           unoptimized
-          src={post.featuredImage.url} 
+          src={post.featuredImage.url}
           alt={post.title}
           height="750px"
           width="1000px"
