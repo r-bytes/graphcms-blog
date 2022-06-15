@@ -9,7 +9,7 @@ export default function Home({ posts }) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-8 col-span-1">
           {posts
-            .sort( (a,b) => a.createdAt > b.createdAt ? 1 : -1)
+            .sort( (a,b) => a.createdAt < b.createdAt ? 1 : -1)
             .map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}
