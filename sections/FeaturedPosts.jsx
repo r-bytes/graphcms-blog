@@ -30,7 +30,7 @@ const FeaturedPosts = () => {
 
   useEffect(() => {
     getFeaturedPosts().then((result) => {
-      setFeaturedPosts(result.sort( (a,b) => a.createdAt < b.createdAt ? 1 : -1));
+      setFeaturedPosts(result);
       // console.log(result);
       setDataLoaded(true);
     });
